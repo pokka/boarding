@@ -7,7 +7,16 @@
     <link rel="stylesheet" type="text/css" href="stylesheets/stylesheet.css" media="screen" />
     <link rel="stylesheet" type="text/css" href="stylesheets/pygment_trac.css" media="screen" />
     <link rel="stylesheet" type="text/css" href="stylesheets/print.css" media="print" />
-
+    <script type="text/javascript" src='http://code.jquery.com/jquery-1.7.2.min.js'></script>
+    <script type="text/javascript" src='https://raw.github.com/pokka/boarding/master/jquery.boarding.js'></script>
+    <script type="text/javascript">
+      $(document).ready(function(){
+        setTimeout(ini,1000);
+      });
+      function ini(){
+        $('#boarding').boarding({concats:[' ',',','?']}).rock('Boarding,u got it?');
+      }
+    </script>
     <title>Boarding.js by pokka</title>
   </head>
 
@@ -28,11 +37,9 @@
 
     <div class="container">
       <section id="main_content">
-        <h1>boarding</h1>
+        <h1 id='boarding'>Boarding</h1>
 
-<p>Just a simple text-effect,like the rolling lottery numbers.Inspired by airport's boarding-board.</p>
-
-<h3>Usage</h3>
+<h3 id='usage'>Usage</h3>
 
 <pre><code>  var $obj = $('#span_obj').boarding();
   $obj.rock(); // a rolling stone,will never stop
@@ -42,7 +49,7 @@
 
 <p>and simple code</p>
 
-<h3>Minify</h3>
+<h3 id='minify'>Minify</h3>
 
 <p><a href="https://github.com/mishoo/UglifyJS">UglifyJS</a></p>
       </section>
