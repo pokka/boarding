@@ -1,7 +1,5 @@
-boarding
+[Boarding](http://pokka.github.com/boarding/)
 ========
-
-Just a simple text-effect,like the rolling lottery numbers.Inspired by airport's boarding-board.
 
 ### Usage
 ```
@@ -14,3 +12,6 @@ and simple code
 
 ### Minify
 [UglifyJS](https://github.com/mishoo/UglifyJS)
+
+### TODO
+* multiple rock 'bugs'
