@@ -35,7 +35,7 @@
       var len=settings.letters.length,grooves=[],board='',tmp='';
       for(var i=n,j=stone.length;i<j;i++){
         tmp = settings.letters[[Math.floor(Math.random() * len)]];
-        tmp==stone[n]&&n++;
+        tmp==stone.substring(n,1)&&n++;
         grooves.push(tmp);
       }
       board=stone.substring(0,n)+grooves.join(settings.spliter);
