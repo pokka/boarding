@@ -46,7 +46,7 @@
         clearTimeout(T);
         settings.after_goal.call(_$self,board);
       }else{
-        T = setTimeout(goal, settings.flash,stone,n);
+        T = setTimeout(function(){goal(stone,n);}, settings.flash);
       }
     };
 
